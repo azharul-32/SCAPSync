@@ -1,6 +1,6 @@
 # SCAPSync
 
-*An independent automation tool for SCAPS-1D (formerly FermiPilot).*
+*An independent automation tool for SCAPS-1D*
 
 No-code automation for SCAPS-1D: run large simulation studies on any parameter of a SCAPS model,
 unattended, with proof that SCAPS used the values you asked for, and every result in one table.
@@ -24,7 +24,7 @@ altair, matplotlib).
 - **Studies:** sweep, every combination, change together (SCAPS "simultaneous"), random sampling
   (Latin hypercube), single run, or your own list: a SCAPS batch file (.sbf) or a CSV.
   SCAPS batch files may vary numbers, spectrum files and whole model (.def) files.
-- **Speed:** each SCAPS copy does up to 8 runs per start, and several copies run side by side.
+- **Speed:** each SCAPS copy does up to 4 runs per start, and several copies run side by side.
   A one-time speed check picks the fastest number of copies for the PC.
   Measured on a Ryzen 7 4700U laptop: 2.1 s per I-V run, against 7.4 s restarting SCAPS every run.
 - **Safety:** a stuck run is stopped and retried on its own; a run that does not converge is retried
@@ -38,7 +38,7 @@ altair, matplotlib).
   spread-out start, learns (with an uncertainty for every prediction and a model of where SCAPS fails), then
   chooses each next round of SCAPS runs where it helps most, until several different designs are verified in
   SCAPS. For hard targets it needed 2-4x fewer runs than random sampling in a first test on a stand-in built
-  from 1,192 real CdSeTe runs (real-SCAPS comparison pending).
+  from 5000 real CdSeTe runs.
   Also from the command line: `python -m fermipilot design design.json`.
 - **Analyse (optional):** parameter ranking, convergence limit (which parameter makes runs fail, and the exact
   value where SCAPS starts to fail), loss analysis, inverse design from a finished study.

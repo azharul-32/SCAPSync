@@ -1,7 +1,7 @@
 # SCAPSync
 **Run large SCAPS-1D simulation studies on any parameter of your model, unattended, with proof that SCAPS used every value you asked for and every result in one table.**
 
-*(formerly FermiPilot)* · Version 0.9.4, pre-release · Windows · tested on SCAPS 3.3.09.
+Version 0.9.4, pre-release · Windows · tested on SCAPS 3.3.09.
 SCAPS itself is not included: it is free from Ghent University and must be installed separately.
 
 ## Download and start
